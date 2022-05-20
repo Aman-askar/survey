@@ -1,0 +1,41 @@
+li{
+    display: inline;
+}
+
+
+
+#terms{
+    display: inline;
+}
+#first-scrnsht{
+    width: 50%;
+    height: auto;
+}
+
+#ratings{
+    text-align: center;
+}
+
+#templates{
+    text-align: center;
+}
+
+.model{
+    width: 50%;
+    height: auto;
+}
+
+
+.template{
+    width: 100px;
+}
+
+.img-with-text {
+    text-align: center;
+    width: 100px;
+    padding: 75px;
+}
+.img-with-text img {
+    display: block;
+    margin: 0 auto;
+}
