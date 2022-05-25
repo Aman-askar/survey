@@ -1,6 +1,9 @@
+
+ul{
+    padding-left: 0;
+}
 li {
-    display: inline;
-    padding: 0 5px;
+    list-style: none;
 }
 
 input[type=email],
@@ -45,6 +48,10 @@ a:active {
     background-color: transparent !important;
 }
 
+.nav-link{
+    color: #000000 !important;
+}
+
 .navbar-container{
 padding: 0 !important;
 }
@@ -54,6 +61,7 @@ padding: 0 !important;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
+    border: 0;
     background-color: orangered;
     color: white;
 }
@@ -63,22 +71,19 @@ padding: 0 !important;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
+    border: 0;
     background-color: orangered;
     color: white;
 }
 
-.text {
-    padding-top: 9rem;
-    text-align: left;
-}
 
 .title-body {
-    padding: 60px 0;
+    padding: 40px 0px 40px 15px;
 }
 
 .or-signin {
     text-align: right;
-    padding: 0 7rem;
+    padding: 0 100px;
 }
 
 .title {
@@ -91,6 +96,7 @@ padding: 0 !important;
 }
 
 .first-container {
+    padding-top: 0px !important;
     padding-bottom: 0px !important;
 }
 
@@ -100,7 +106,9 @@ padding: 0 !important;
 
 }
 
-.third-container {
+.third-container,
+.fourth-container,
+.fifth-container {
     padding-top: 8rem;
     padding-left: 0px !important;
     padding-right: 0px !important;
@@ -108,19 +116,40 @@ padding: 0 !important;
 
 }
 
-
-#terms {
-    display: inline;
+.fourth-container{
+    flex-direction: row-reverse;
 }
 
-#first-scrnsht {
-    max-width: 100%;
+.feature-session{
+    display: flex;
+    flex-direction: column;
+}
+
+.model1,
+.model2,
+.model3 {
+    width: 80%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.text1,
+.text2,
+.text3 {
+    padding-top: 9rem;
+    text-align: left;
+}
+
+.text2{
+    padding-right: 60px;
+}
+
+.first-scrnsht {
+    max-width: 92%;
     max-height: 100%;
 }
 
-
-
-#ratings {
+.ratings {
     text-align: center;
 }
 
@@ -128,7 +157,7 @@ padding: 0 !important;
     padding: 0 0 0 1rem !important;
 }
 
-#templates {
+.templates {
     text-align: center;
     color: white;
     background-color: rgb(33, 40, 57);
@@ -139,9 +168,6 @@ padding: 0 !important;
 }
 
 
-#last {
-    text-align: center;
-}
 
 
 .phone-img {
@@ -165,19 +191,7 @@ padding: 0 !important;
     padding: 3% 15% 10%;
 }
 
-.model1,
-.model2,
-.model3 {
-    width: 80%;
-    height: auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.img2{
-    float: left !important;
-}
-
-.tiles{
+.pricing-card{
     padding: 3% 2%;
 }
 
@@ -221,11 +235,6 @@ padding: 0 !important;
     width: 100px;
 }
 
-#testimonials {
-
-    text-align: center;
-}
-
 .testimonial-img {
     width: 10%;
     border-radius: 100%;
@@ -239,8 +248,6 @@ padding: 0 !important;
 .car-btn {
     background-color: #000000;
 }
-
-
 
 .img-with-text {
     text-align: center;
@@ -258,7 +265,6 @@ padding: 0 !important;
     background: linear-gradient(180deg, rgba(5, 254, 255, 1) 0%, rgba(165, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 11%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 96%, rgba(145, 255, 255, 1) 100%, rgba(5, 254, 255, 1) 100%);
 }
 
-
 .container {
     max-width: 50%;
     margin: 40px auto;
@@ -275,8 +281,21 @@ padding: 0 !important;
     [type=password]{
         width: 100%;
     }
+    ul{
+        padding-top: 10px;
+    }
     .form{
         padding-left: 0px;
+    }
+    .features{
+        text-align: center;
+    }
+    .text1,
+    .text2,
+    .text3{
+        padding-top: 5px;
+        padding-bottom: 20px;
+        text-align: center;
     }
     .login-btn{
         width: 100%;
@@ -296,10 +315,12 @@ padding: 0 !important;
         padding-top: 0px;
     }
     .signup-btn{
-        width: 100%;
+        width: 50%;
     }
     .footer{
         text-align: center;
     }
 
 }
+
+
